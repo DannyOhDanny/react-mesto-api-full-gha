@@ -1,0 +1,16 @@
+.mobile_btn {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .mobile_btn {
+    display: block;
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    right: 27px;
+    top: 30px;
+    cursor: pointer;
+    z-index: 2;
+  }
+}

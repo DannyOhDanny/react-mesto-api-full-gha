@@ -1,0 +1,6 @@
+.root {
+  background: #000;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}

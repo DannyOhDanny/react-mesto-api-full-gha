@@ -1,0 +1,12 @@
+.auth-popup__caption {
+  margin: 0 auto;
+  padding: 32px 0 60px 0;
+  max-width: 358px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+}

@@ -1,0 +1,15 @@
+.auth__error {
+  margin: 10px 36px 5px 36px;
+  padding: 0;
+  color: red;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: start;
+}
+
+@media screen and (min-width: 320px) and (max-width: 468px) {
+  .auth__error {
+    margin: 10px 22px 5px 22px;
+    max-width: 238px;
+  }
+}

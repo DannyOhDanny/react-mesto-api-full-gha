@@ -1,0 +1,6 @@
+.element {
+  margin: 0 auto;
+  padding: 0;
+  grid-area: 'card';
+  position: relative;
+}

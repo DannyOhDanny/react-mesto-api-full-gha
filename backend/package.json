@@ -1,0 +1,39 @@
+{
+  "name": "express-mesto-gha",
+  "author": "Daria Matveeva",
+  "version": "1.0.0",
+  "description": "# Проект Mesto фронтенд + бэкенд",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint .",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "dev:inspect": "nodemon --inspect app.js",
+    "depcheck": "depcheck",
+    "fix": "npx eslint . --fix"
+  },
+  "keywords": [],
+  "license": "ISC",
+    "devDependencies": {
+    "depcheck": "^1.4.3",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^15.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-winston": "^4.2.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.2",
+    "validator": "^13.9.0",
+    "winston": "^3.10.0"
+  }
+}

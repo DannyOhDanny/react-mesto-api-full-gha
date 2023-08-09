@@ -1,0 +1,13 @@
+.element__counter {
+  margin: 20px auto 0 auto;
+  padding: 0;
+  max-height: 13px;
+  max-width: 10px;
+  width: 100%;
+  color: #000;
+  font-size: 13px;
+  align-self: center;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+}

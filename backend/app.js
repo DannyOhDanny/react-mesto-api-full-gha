@@ -25,14 +25,23 @@ app.use(requestLogger); // подключаем логгер запросов
 app.use(
   cors({
     origin: [
+      'https://localhost:3000',
       'http://localhost:3000',
       'http://dmatveeva.students.nomoreparties.co',
       'https://dmatveeva.students.nomoreparties.co',
+      'http://api.dmatveeva.nomoreparties.co',
+      'https://api.dmatveeva.nomoreparties.co',
     ],
     credentials: true,
     maxAge: 30,
   })
 ); // разрешает кросс-доменные запросы
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+}); // Краш-тест сервера
 
 app.use('/', authRouter);
 app.use('/users', auth, userRouter);

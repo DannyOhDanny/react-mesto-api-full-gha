@@ -1,5 +1,4 @@
-export const BASE_URL = 'http://localhost:4000';
-//export const BASE_URL = 'https://dmatveeva.students.nomoreparties.co';
+export const BASE_URL = 'https://api.dmatveeva.nomoreparties.co';
 // function handleServerResponse(res) {
 //   res.ok
 //     ? res.json()

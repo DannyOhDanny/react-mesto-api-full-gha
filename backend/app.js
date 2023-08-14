@@ -13,7 +13,7 @@ const authRouter = require('./routes/auths');
 const { auth } = require('./middlewares/auth');
 const { handleErrors, error404 } = require('./utils/handleErrors');
 
-const { PORT, DB_URL } = process.env; // подключает глобальные переменные
+const { NODE_ENV, PORT, DB_URL } = process.env; // подключает глобальные переменные
 // console.log(require('crypto').randomBytes(32).toString('hex'));
 
 const app = express();
@@ -53,8 +53,10 @@ app.use(errorLogger); // подключаем логгер ошибок
 app.use(errors()); // стандартные ошибки
 app.use(handleErrors); // кастомные ошибки
 
-mongoose.connect(DB_URL); // подключаем БД MongoDB
+mongoose.connect(
+  NODE_ENV === 'production' ? DB_URL : 'mongodb://127.0.0.1:27017/mestodb'
+); // подключаем БД MongoDB
 
-app.listen(PORT, () => {
+app.listen(NODE_ENV === 'production' ? PORT : 3000, () => {
   console.log(`App is listening to port: ${PORT}`);
 }); // Слушаем порт

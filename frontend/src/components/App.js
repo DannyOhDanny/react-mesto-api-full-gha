@@ -251,6 +251,8 @@ function App() {
         navigate('/', { replace: true });
       })
       .catch(err => {
+        setIsSuccess(false);
+        setInfoTooltipPopupOpen(true);
         setErrorMessage((err = 'Неверый логин или пароль пользователя'));
       });
   }
